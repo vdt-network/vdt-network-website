@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>VDT Network - Decentralized Render Farm on the Neo Blockchain</title>
+    <title>Your Virtual Business Card</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css"
@@ -28,6 +28,50 @@
     <link href="css/creative.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#newsletter-form").submit(function(e){
+                e.preventDefault();
+
+                var $form = $(this),
+                    email = $form.find('input[name="email"]').val(),
+                    url = $form.attr('action');
+
+                $.post(url, {email:email, name:name, list: 'DK1Jx763spk3PYl7LekqS2mg'},
+
+                    function(data) {
+                        var data = $(data).find('h2').text();
+                        console.log(data);
+                        if(data)
+                        {
+
+                                $("#status").text(data);
+                                $('#name').val('');
+                                $('#email').val('');
+                                setTimeout(function(){
+                                    $("#status").text("");
+                                }, 3000);
+
+                        }
+                        else
+                        {
+                            alert("Sorry, unable to subscribe. Please try again later!");
+                        }
+                    }
+                );
+            });
+            $("#newsletter-form").keypress(function(e) {
+                if(e.keyCode == 13) {
+                    e.preventDefault();
+                    $(this).submit();
+                }
+            });
+            $("#submit").click(function(e){
+                e.preventDefault();
+                $("#newsletter-form").submit();
+            });
+        });
+    </script>
 
 </head>
 
@@ -40,7 +84,8 @@
             <img src="logo.png" style="margin-bottom:50px;">
             <h2 id="homeHeading">Your virtual business card for Vidiato.</h2>
             <hr>
-            <form action="https://email.macrowish.com/subscribe" method="POST" class="col-md-6" style="margin:0 auto;" accept-charset="utf-8">
+            <form id="newsletter-form" action="https://email.macrowish.com/subscribe" method="POST" class="col-md-6" style="margin:0 auto;" accept-charset="utf-8">
+                <div class="col-md-12"><span id="status"></span></div>
                 <label for="name">Name</label><br/>
                 <input type="text" name="name" id="name" class="form-control" style="margin-bottom:10px;" autocomplete="off"/>
                 </br>
