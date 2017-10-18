@@ -35,9 +35,12 @@
 
                 var $form = $(this),
                     email = $form.find('input[name="email"]').val(),
+                    name = $form.find('input[name="name"]').val(),
+                    company = $form.find('input[name="company"]').val(),
+
                     url = $form.attr('action');
 
-                $.post(url, {email:email, name:name, list: 'DK1Jx763spk3PYl7LekqS2mg'},
+                $.post(url, {email:email, name:name, company: company, list: 'DK1Jx763spk3PYl7LekqS2mg'},
 
                     function(data) {
                         var data = $(data).find('h2').text();
@@ -47,7 +50,9 @@
 
                                 $("#status").text(data);
                                 $('#name').val('');
-                                $('#email').val('');
+                            $('#name').val('');
+                            $('#company').val('');
+                            $('#email').val('');
                                 setTimeout(function(){
                                     $("#status").text("");
                                 }, 3000);
@@ -88,6 +93,9 @@
                 <div class="col-md-12"><span id="status"></span></div>
                 <label for="name">Name</label><br/>
                 <input type="text" name="name" id="name" class="form-control" style="margin-bottom:10px;" autocomplete="off"/>
+                </br>
+                <label for="company">Company</label><br/>
+                <input type="text" name="company" id="company" class="form-control" style="margin-bottom:10px;" autocomplete="off"/>
                 </br>
                 <label for="email">Email</label><br/>
                 <input type="email" name="email" id="email" class="form-control" style="margin-bottom:5px;" autocomplete="off"/>
