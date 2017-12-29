@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="559c106f-22c1-4ac1-821c-6a50dd986092" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/js/newsletter.js" afterPath="$PROJECT_DIR$/js/newsletter.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="294" column="30" lean-forward="false" selection-start-line="294" selection-start-column="30" selection-end-line="294" selection-end-column="30" />
+            <state relative-caret-position="421">
+              <caret line="282" column="13" lean-forward="false" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -45,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newsletter.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="newsletter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/newsletter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="765">
+              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -97,7 +98,6 @@
       <find>margin</find>
       <find>color:</find>
       <find>figcaption</find>
-      <find>learn more</find>
       <find>center</find>
       <find>color:white</find>
       <find>uptime</find>
@@ -108,6 +108,7 @@
       <find>soong</find>
       <find>list</find>
       <find>You\'re</find>
+      <find>learn more</find>
     </findStrings>
     <replaceStrings>
       <replace>https://images.unsplash.com/photo-1504384308090-c894fdcc538d?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=2700&amp;h=&amp;q=80&amp;cs=tinysrgb&amp;crop=</replace>
@@ -123,10 +124,10 @@
         <option value="$PROJECT_DIR$/css/creative.css" />
         <option value="$USER_HOME$/AppData/Local/Temp/signup.js" />
         <option value="$USER_HOME$/AppData/Local/Temp/signup.php" />
-        <option value="$PROJECT_DIR$/js/newsletter.js" />
         <option value="$USER_HOME$/Downloads/subscribe.php" />
         <option value="$PROJECT_DIR$/email-form.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/newsletter.js" />
       </list>
     </option>
   </component>
@@ -252,12 +253,12 @@
       <workItem from="1508246180528" duration="5754000" />
       <workItem from="1508316346252" duration="362000" />
       <workItem from="1509480770128" duration="559000" />
-      <workItem from="1514577458634" duration="331000" />
+      <workItem from="1514577458634" duration="486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17374000" />
+    <option name="totallyTimeSpent" value="17529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -565,14 +566,6 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/signup.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/signup.js" />
-    <entry file="file://$PROJECT_DIR$/js/newsletter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/subscribe.php" />
     <entry file="file://$PROJECT_DIR$/email-form.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -591,14 +584,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="294" column="30" lean-forward="false" selection-start-line="294" selection-start-column="30" selection-end-line="294" selection-end-column="30" />
+        <state relative-caret-position="421">
+          <caret line="282" column="13" lean-forward="false" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/newsletter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

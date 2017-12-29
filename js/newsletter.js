@@ -13,7 +13,10 @@ $(document).ready(function() {
                 console.log(data);
                 if(data)
                 {
-                    console.log('data:' + data);
+                    $("#email").hide();
+                  $("#submit").hide();
+
+                  console.log('data:' + data);
                     if(data=="Some fields are missing.")
                     {
                         $("#status").text("Please fill in your email.");
@@ -46,15 +49,5 @@ $(document).ready(function() {
                 }
             }
         );
-    });
-    $("#newsletter-form").keypress(function(e) {
-        if(e.keyCode == 13) {
-            e.preventDefault();
-            $(this).submit();
-        }
-    });
-    $("#submit").click(function(e){
-        e.preventDefault();
-        $("#newsletter-form").submit();
     });
 });
